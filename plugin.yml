@@ -1,0 +1,17 @@
+name: IceEm
+main: net.AptiTech.lordaragos.minecraft.IceEm.Main
+version: 1.01
+description: >
+             A plugin that allows operators to freeze griefers or other players.
+commands:
+  freeze:
+    description: Freezes a player
+permissions:
+  IceEm.*:
+    description: Gives access to all IceEm actions
+    children:
+        IceEm.freeze: true
+  IceEm.freeze:
+     description: Permissions for /freeze
+     default: op
+    
